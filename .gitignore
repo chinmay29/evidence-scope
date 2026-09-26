@@ -1,0 +1,38 @@
+# Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+
+# Prepared sources and raw runs stay local; publish reviewed reports separately
+/corpus/snapshots/*
+!/corpus/snapshots/.gitkeep
+/evals/runs/*
+!/evals/runs/.gitkeep
+*.sqlite
+*.sqlite3
+*.sqlite-shm
+*.sqlite-wal
+*.log
+
+# Editor and operating-system files
+.DS_Store
+.idea/
+.vscode/
+*.swp
